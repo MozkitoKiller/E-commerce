@@ -1,31 +1,19 @@
-import React, { useState, useEffect } from 'react'
-import { commerce } from './lib/Commerce.js';
-import { Products, Navbar } from './components';
 
+import './App.css';
+import Footer from './Component/Footer/Footer';
+import Banner from './Component/Home/Banner/Banner';
+import Home from './Component/Home/Home';
+import Navbar from './Component/Navbar/Navbar';
 
-const App = () => {
-
-  const [products, setProducts] = useState([])
-
-  const fetchProducts = async () => {
-    const {data} = await commerce.products.list()
-
-    setProducts(data)
-  }
-
-
-  useEffect(() => {
-
-    fetchProducts();
-
-  }, []);
-
+function App() {
   return (
-        <div>
-            <Navbar />
-            <Products products={products} />
-        </div>
-  )
-}
+  <>
+    <Navbar />
+    <Banner/>
+    <Home />
+    <Footer />
 
+  </>
+)
+}
 export default App;

@@ -1,0 +1,124 @@
+footer {
+
+    margin: 128px 0px 10px 0px;
+    background-color: rgb(231, 231, 245);
+}
+
+.conteudo {
+    margin: 0px 1% 10px 11%;
+    display: grid;
+    grid-template-areas: 'logo link contato'
+                        'logo link contato';
+    overflow: hidden;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    padding-right: 55px;
+    padding-bottom: 21%;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.links {
+    grid-area: link;
+    padding-right: 112px;
+}
+
+.links ul {
+    width: 200px;
+    list-style: none;
+}
+
+.links li {
+    padding-bottom: 10%;
+}
+
+.contato {
+    grid-area: contato;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.contato input {
+    width: 560px;
+    height: 56px;
+    left: calc(50% - 560px/2);
+    top: 0px;
+    border: none;
+
+}
+
+.contato button {
+    position: static;
+    width: 165px;
+    height: 51px;
+    left: 0px;
+    top: 189px;
+
+    border: none;
+
+    background: #2A7AE4;
+
+   
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 8px 0px;
+
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+   
+
+
+   
+
+    color: #FFFFFF;
+
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo {
+        grid-template-areas: 'logo contato'
+                            'link contato';
+    }
+
+    .logo {
+        margin-left: 25px;
+    }
+
+    .logo {
+        margin-bottom: -40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .conteudo {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato input {
+        height: 66px;
+        width: 310px;
+        display: block;
+    }
+}

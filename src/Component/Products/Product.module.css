@@ -1,0 +1,49 @@
+
+.image {
+    height: 10em;
+    width: 10em;
+}
+
+.card {
+    padding: 1em 1%;
+    box-shadow: none;
+}
+
+.info {
+    padding: 0px;
+}
+
+.nome {
+    margin: 4px 0px 4px 0px;
+    color: #464646;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    box-shadow: none;
+}
+
+.preco {
+    margin: 4px 0px 4px 0px;
+    color: #464646;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+span {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* Azul/100% */
+
+    color: #2A7AE4;
+}

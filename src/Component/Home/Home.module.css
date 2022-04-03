@@ -1,0 +1,34 @@
+.section {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.link {
+    color: blue;
+    text-decoration: none;
+}
+
+.products {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Raleway';
+    display: flex;
+    justify-content: space-between;
+    margin: 7% 10% 0px 10%;;
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        height: 277px;
+    }
+
+    .products {
+        height: 100%;
+        overflow: hidden;
+    }
+}
