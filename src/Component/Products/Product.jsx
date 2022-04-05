@@ -1,12 +1,14 @@
 import React from 'react'
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } from '@material-ui/core'
 import style from './Product.module.css'
-import img1 from '../../assets/produtos/starwars/stormTCaneca.svg'
+import { Link } from 'react-router-dom';
 
 
-function Product({product}) {
+
+function Product({ product }) {
+
     return (
-        <div  className={style.card} key={product.id}>
+        <div className={style.card} key={product.id}>
             <CardMedia className={style.image} image={product.img} title={product.name} />
             <div>
                 <div className={style.info}>
@@ -17,7 +19,11 @@ function Product({product}) {
                         {product.price}
                     </p>
                 </div>
-                <span>Ver Produto</span>
+                <Link to={`/Produto/${product.name}`}>
+                    <span>Ver Produto</span>
+                </Link>
+
+
             </div>
         </div>
     )

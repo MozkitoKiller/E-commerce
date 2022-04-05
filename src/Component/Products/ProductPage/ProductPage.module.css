@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 2% 2% 2%;
+}
+
+.img {
+    padding-right: 0px;
+}
+
+.img img {
+    width: 560px;
+    height: 403px;
+}
+
+.productInfo {
+    margin-left: -50px;
+}
+
+ button {
+    position: static;
+    width: 165px;
+    height: 51px;
+    left: 0px;
+    top: 189px;
+
+    border: none;
+
+    background: #2A7AE4;
+
+   
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 8px 0px;
+
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+   
+
+
+   
+
+    color: #FFFFFF;
+
+}

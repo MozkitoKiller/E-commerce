@@ -9,6 +9,11 @@
   
 }
 
+.cart{
+  width: 31px;
+  height: 49px;
+}
+
 .logo_pesquisa {
   display: flex;
   justify-content: space-between;
@@ -38,6 +43,7 @@
   left: 954px;
   top: 32px;
 }
+
 
 .lupa {
   display: none;
