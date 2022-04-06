@@ -1,0 +1,6 @@
+.AllProducts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2% 10% 2% 10%;
+}

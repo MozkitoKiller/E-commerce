@@ -3,6 +3,7 @@ import { ProductContext } from '../Context/ProductsContext'
 import Product from '../Products/Product'
 import style from './Home.module.css'
 import Banner from './Banner/Banner'
+import { Link } from 'react-router-dom'
 
 function Home() {
 
@@ -14,7 +15,8 @@ function Home() {
             <div className={style.section}>
                 <div className={style.titulo}>
                     <h3>Star Wars</h3>
-                    <a className={style.link}>Ver tudo</a>
+                    
+                    <Link to="/AllProducts" className={style.link}>Ver tudo</Link>
                 </div>
                 <div className={style.products} key={produtos.id}>
                     {produtos.map((product) => {
@@ -32,7 +34,7 @@ function Home() {
             <div className={style.section}>
                 <div className={style.titulo}>
                     <h3>Consoles</h3>
-                    <a className={style.link}>Ver tudo</a>
+                    <Link to="/AllProducts" className={style.link}>Ver tudo</Link>
                 </div>
                 <div className={style.products} key={produtos.id}>
                     {produtos.map((product) => {
@@ -49,7 +51,7 @@ function Home() {
             <div className={style.section}>
                 <div className={style.titulo}>
                     <h3>Diversos</h3>
-                    <a className={style.link}>Ver tudo</a>
+                    <Link to="/AllProducts" className={style.link}>Ver tudo</Link>
                 </div>
                 <div className={style.products} key={produtos.id}>
                     {produtos.map((product) => {

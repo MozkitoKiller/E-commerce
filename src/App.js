@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 import Footer from './Component/Footer/Footer';
 import Cart from './Component/Cart/Cart'
 import Home from './Component/Home/Home';
@@ -9,6 +8,7 @@ import ProductPage from './Component/Products/ProductPage/ProductPage';
 import axios from 'axios'
 
 import { ProductContext } from './Component/Context/ProductsContext';
+import AllProducts from './Component/TodosOsProdutos/AllProducts';
 
 
 
@@ -42,6 +42,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Cart" element={<Cart />} />
             <Route path="/Produto/:name" element={<ProductPage produto={produtos} />} />
+            <Route path="/AllProducts" element={<AllProducts />} />
           </Routes>
           <Footer />
         </Router>
